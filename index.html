@@ -1,0 +1,1091 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IART - Institute for Applied Research and Training</title>
+
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Swiper Slider -->
+    <link href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .button:hover {
+            background-color: var(--primary) !important;
+            color: white !important;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- ===== WELCOME SLIDER SECTION ===== -->
+    <div class="welcome-section" id="welcomeSection">
+        <div class="welcome-progress"></div>
+        <button class="welcome-skip-btn" id="skipWelcome">Skip</button>
+
+        <div class="welcome-container">
+            <div class="swiper welcomeSwiper">
+                <div class="swiper-wrapper">
+
+                    <div class="swiper-slide slide-1">
+                        <div class="slide-decoration decoration-1"></div>
+                        <div class="slide-decoration decoration-2"></div>
+                        <div class="slide-content">
+                            <div class="slide-icon">
+                                <img src="logo.jpeg" alt="logo"
+                                    style="width: 120px; height: 120px; border-radius: 12px;">
+                            </div>
+                            <h2 class="slide-title">Welcome to IART</h2>
+                            <p class="slide-subtitle">
+                                Institute for Applied Research and Training - Your Gateway to Academic Excellence
+                            </p>
+                            <div class="slide-features">
+                                <div class="feature-item">
+                                    <i class="fas fa-check"></i>
+                                    Expert Mentorship
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fas fa-check"></i>
+                                    Research Support
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fas fa-check"></i>
+                                    Career Growth
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide slide-2">
+                        <div class="slide-decoration decoration-1"></div>
+                        <div class="slide-decoration decoration-2"></div>
+                        <div class="slide-content">
+                            <div class="slide-icon">
+                                <i class="fas fa-book-reader"></i>
+                            </div>
+                            <h2 class="slide-title">Research Writing Guidance</h2>
+                            <p class="slide-subtitle">
+                                Step-by-step guidance to help students and researchers write high-quality research
+                                papers, theses, and academic publications.
+                            </p>
+                            <div class="slide-features">
+                                <div class="feature-item">
+                                    <i class="fas fa-check"></i>
+                                    Research Paper Structure
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fas fa-check"></i>
+                                    Scientific & Academic Writing
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fas fa-check"></i>
+                                    Citation & Referencing
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fas fa-check"></i>
+                                    Journal Publication Guidance
+                                </div>
+                            </div>
+                            <a href="https://iartresearch.com/"
+                                style="display:inline-flex;align-items:center;gap:10px;background:rgba(255,255,255,0.95);color:#000000;padding:14px 32px;border-radius:50px;font-weight:700;text-decoration:none;margin-top:30px;transition:all 0.3s ease;box-shadow:0 8px 25px rgba(0,0,0,0.2);font-size:1.05rem;"
+                                onmouseover="this.style.transform='translateY(-3px)'; this.style.boxShadow='0 12px 35px rgba(0,0,0,0.3)';"
+                                onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 8px 25px rgba(0,0,0,0.2)';">
+                                Explore Guidance <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide slide-3">
+                        <div class="slide-decoration decoration-1"></div>
+                        <div class="slide-decoration decoration-2"></div>
+                        <div class="slide-content">
+                            <div class="slide-icon">
+                                <i class="fas fa-microscope"></i>
+                            </div>
+                            <h2 class="slide-title">Research Biolabs</h2>
+                            <p class="slide-subtitle">
+                                State-of-the-art laboratory facilities for your research projects
+                            </p>
+                            <div class="slide-features">
+                                <div class="feature-item">
+                                    <i class="fas fa-check"></i>
+                                    Modern Equipment
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fas fa-check"></i>
+                                    Expert Support
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fas fa-check"></i>
+                                    24/7 Access
+                                </div>
+                            </div>
+                            <a href="https://iartresearch.com/"
+                                style="display: inline-flex; align-items: center; gap: 10px; background: rgba(255, 255, 255, 0.95); color: #040606; padding: 14px 32px; border-radius: 50px; font-weight: 700; text-decoration: none; margin-top: 30px; transition: all 0.3s ease; box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2); font-size: 1.05rem;"
+                                onmouseover="this.style.transform='translateY(-3px)'; this.style.boxShadow='0 12px 35px rgba(0, 0, 0, 0.3)';"
+                                onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 8px 25px rgba(0, 0, 0, 0.2)';">
+                                Start Exploring <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide slide-4">
+                        <div class="slide-decoration decoration-1"></div>
+                        <div class="slide-decoration decoration-2"></div>
+                        <div class="slide-content">
+                            <div class="slide-icon">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <h2 class="slide-title">Join Our Community</h2>
+                            <p class="slide-subtitle">
+                                Connect with 500+ students and researchers in our thriving community
+                            </p>
+                            <div class="slide-features">
+                                <div class="feature-item">
+                                    <i class="fas fa-check"></i>
+                                    Networking Events
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fas fa-check"></i>
+                                    Mentorship Program
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fas fa-check"></i>
+                                    Collaborative Projects
+                                </div>
+                            </div>
+                            <a href="https://iartresearch.com/"
+                                style="display: inline-flex; align-items: center; gap: 10px; background: rgba(255, 255, 255, 0.95); color: #000000; padding: 14px 32px; border-radius: 50px; font-weight: 700; text-decoration: none; margin-top: 30px; transition: all 0.3s ease; box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2); font-size: 1.05rem;"
+                                onmouseover="this.style.transform='translateY(-3px)'; this.style.boxShadow='0 12px 35px rgba(0, 0, 0, 0.3)';"
+                                onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 8px 25px rgba(0, 0, 0, 0.2)';">
+                                Start Exploring <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODERN NAVBAR -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="#home">
+                <div class="logo-icon">
+                    <img src="logo.jpeg" alt="IART Logo">
+                </div>
+                <div class="logo-text">
+                    <span class="logo-title">IART</span>
+                    <span class="logo-subtitle">Research & Training</span>
+                </div>
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#training">Training</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-cta button" href="#contact">
+                            <i class="fas fa-calendar-check"></i>
+                            Get Started
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section class="hero-section" id="home">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6" data-aos="fade-right">
+                    <div class="hero-badge">
+                        <i class="fas fa-sparkles"></i>
+                        Welcome to IART
+                    </div>
+
+                    <h1 class="hero-title">
+                        Institute for <span class="highlight">Applied Research</span> and Training
+                    </h1>
+
+                    <p class="hero-subtitle">
+                        A leading academic support and research training institute dedicated to helping students,
+                        researchers, and professionals achieve excellence in research and scientific writing.
+                    </p>
+
+                    <div class="hero-features">
+                        <div class="hero-feature">
+                            <i class="fas fa-check-circle"></i>
+                            Research Paper Writing
+                        </div>
+                        <div class="hero-feature">
+                            <i class="fas fa-check-circle"></i>
+                            Thesis Guidance
+                        </div>
+                        <div class="hero-feature">
+                            <i class="fas fa-check-circle"></i>
+                            Statistical Analysis
+                        </div>
+                        <div class="hero-feature">
+                            <i class="fas fa-check-circle"></i>
+                            PhD Mentorship
+                        </div>
+                        <div class="hero-feature">
+                            <i class="fas fa-check-circle"></i>
+                            Scientific Editing
+                        </div>
+                        <div class="hero-feature">
+                            <i class="fas fa-check-circle"></i>
+                            Career Counseling
+                        </div>
+                    </div>
+                    
+                    <div class="hero-buttons">
+                        <a href="#contact" class="btn-hero-primary">
+                            <i class="fas fa-paper-plane"></i>
+                            Request Free Consultation
+                        </a>
+                        <a href="#services" class="btn-hero-secondary">
+                            <i class="fas fa-arrow-right"></i>
+                            Explore Services
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 d-none d-lg-block" data-aos="fade-left">
+                    <div class="hero-image">
+                        <img src="hero.jpg"
+                            alt="Research" class="hero-image-main">
+
+                        <div class="floating-card card-1">
+                            <div class="floating-card-icon">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <div class="floating-card-text">
+                                <h5>500+</h5>
+                                <p>Students Guided</p>
+                            </div>
+                        </div>
+
+                        <div class="floating-card card-2">
+                            <div class="floating-card-icon" style="background: var(--gradient-3);">
+                                <i class="fas fa-file-alt"></i>
+                            </div>
+                            <div class="floating-card-text">
+                                <h5>300+</h5>
+                                <p>Research Papers</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PORTAL SECTION -->
+    <section class="portal-section" id="portals">
+        <div class="container">
+            <div class="text-center" data-aos="fade-up">
+                <div class="section-label">
+                    <i class="fas fa-rocket"></i>
+                    Quick Access
+                </div>
+                <h2 class="section-title">Our Dedicated Portals</h2>
+                <p class="section-description">
+                    Access our specialized services through dedicated platforms designed for your specific needs.
+                </p>
+            </div>
+
+            <div class="portal-grid">
+                <div class="portal-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="portal-icon">
+                        <i class="fas fa-pen-nib"></i>
+                    </div>
+                    <h3>Research Writing Guidance</h3>
+                    <p>Expert guidance for research paper writing, thesis support, and academic publications with
+                        personalized mentorship.</p>
+                    <a href="#" class="portal-link">
+                        Access Portal <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <div class="portal-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="portal-icon" style="background: var(--gradient-2);">
+                        <i class="fas fa-microscope"></i>
+                    </div>
+                    <h3>SARG Research Biolabs</h3>
+                    <p>Advanced research facilities and laboratory services for biological and scientific research
+                        projects.</p>
+                    <a href="#" class="portal-link">
+                        Access Portal <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <div class="portal-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="portal-icon" style="background: var(--gradient-3);">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <h3>Internship Letters</h3>
+                    <p>Access and download your official internship offer letters, certificates, and completion
+                        documents.</p>
+                    <a href="#" class="portal-link">
+                        Access Portal <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- WHY CHOOSE SECTION -->
+    <section class="why-section" id="why-choose">
+        <div class="container">
+            <div class="text-center" data-aos="fade-up">
+                <div class="section-label">
+                    <i class="fas fa-award"></i>
+                    Why Choose Us
+                </div>
+                <h2 class="section-title">Why Choose IART</h2>
+                <p class="section-description">
+                    Your trusted partner in academic excellence and research success with comprehensive support.
+                </p>
+            </div>
+
+            <div class="why-grid">
+                <div class="why-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="why-icon">
+                        <i class="fas fa-chalkboard-teacher"></i>
+                    </div>
+                    <div class="why-content">
+                        <h4>Experienced Research Mentors</h4>
+                        <p>Seasoned researchers and academicians with years of expertise in guiding students to success.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="why-card" data-aos="fade-up" data-aos-delay="150">
+                    <div class="why-icon" style="background: var(--gradient-2);">
+                        <i class="fas fa-project-diagram"></i>
+                    </div>
+                    <div class="why-content">
+                        <h4>Multidisciplinary Expertise</h4>
+                        <p>Support across diverse fields including sciences, engineering, humanities, and management.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="why-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="why-icon" style="background: var(--gradient-3);">
+                        <i class="fas fa-hands-helping"></i>
+                    </div>
+                    <div class="why-content">
+                        <h4>End-to-End Support</h4>
+                        <p>Comprehensive guidance from topic selection to final submission at every stage.</p>
+                    </div>
+                </div>
+
+                <div class="why-card" data-aos="fade-up" data-aos-delay="250">
+                    <div class="why-icon">
+                        <i class="fas fa-book-reader"></i>
+                    </div>
+                    <div class="why-content">
+                        <h4>Publication Guidance</h4>
+                        <p>Expert assistance in preparing manuscripts for national and international journals.</p>
+                    </div>
+                </div>
+
+                <div class="why-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="why-icon" style="background: var(--gradient-2);">
+                        <i class="fas fa-tags"></i>
+                    </div>
+                    <div class="why-content">
+                        <h4>Affordable & Transparent</h4>
+                        <p>Quality research support with competitive pricing and no hidden charges.</p>
+                    </div>
+                </div>
+
+                <div class="why-card" data-aos="fade-up" data-aos-delay="350">
+                    <div class="why-icon" style="background: var(--gradient-3);">
+                        <i class="fas fa-laptop-house"></i>
+                    </div>
+                    <div class="why-content">
+                        <h4>Hybrid Learning</h4>
+                        <p>Flexible online and offline sessions designed to fit your schedule perfectly.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICES SECTION -->
+    <section class="services-section" id="services">
+        <div class="container">
+            <div class="text-center" data-aos="fade-up">
+                <div class="section-label">
+                    <i class="fas fa-briefcase"></i>
+                    Our Services
+                </div>
+                <h2 class="section-title">Academic Research Support Services</h2>
+                <p class="section-description">
+                    Comprehensive research support services for undergraduate, postgraduate, and doctoral scholars.
+                </p>
+            </div>
+
+            <div class="services-grid">
+                <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-icon">
+                        <i class="fas fa-file-alt"></i>
+                    </div>
+                    <h3>Research Paper Writing</h3>
+                    <p>Professional assistance for writing high-quality manuscripts suitable for peer-reviewed journals.
+                    </p>
+                    <ul>
+                        <li><i class="fas fa-check-circle"></i> Paper structure development</li>
+                        <li><i class="fas fa-check-circle"></i> Literature review assistance</li>
+                        <li><i class="fas fa-check-circle"></i> Data interpretation</li>
+                        <li><i class="fas fa-check-circle"></i> Journal formatting guidelines</li>
+                        <li><i class="fas fa-check-circle"></i> Plagiarism checking</li>
+                    </ul>
+                </div>
+
+                <div class="service-card" data-aos="fade-up" data-aos-delay="150">
+                    <div class="service-icon" style="background: var(--gradient-2);">
+                        <i class="fas fa-book"></i>
+                    </div>
+                    <h3>Thesis & Dissertation Support</h3>
+                    <p>Complete guidance for master's and doctoral research including all stages of development.</p>
+                    <ul>
+                        <li><i class="fas fa-check-circle"></i> Thesis proposal development</li>
+                        <li><i class="fas fa-check-circle"></i> Literature review writing</li>
+                        <li><i class="fas fa-check-circle"></i> Methodology design</li>
+                        <li><i class="fas fa-check-circle"></i> Chapter drafting</li>
+                        <li><i class="fas fa-check-circle"></i> Final thesis editing</li>
+                    </ul>
+                </div>
+
+                <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-icon" style="background: var(--gradient-3);">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <h3>Topic & Synopsis Development</h3>
+                    <p>Expert assistance in selecting research topics and preparing strong research proposals.</p>
+                    <ul>
+                        <li><i class="fas fa-check-circle"></i> Innovative topic identification</li>
+                        <li><i class="fas fa-check-circle"></i> Research objectives definition</li>
+                        <li><i class="fas fa-check-circle"></i> Structured proposal development</li>
+                        <li><i class="fas fa-check-circle"></i> Synopsis for university approval</li>
+                    </ul>
+                </div>
+
+                <div class="service-card" data-aos="fade-up" data-aos-delay="250">
+                    <div class="service-icon">
+                        <i class="fas fa-chart-bar"></i>
+                    </div>
+                    <h3>Statistical Analysis</h3>
+                    <p>Accurate statistical analysis support using advanced tools for credible research results.</p>
+                    <ul>
+                        <li><i class="fas fa-check-circle"></i> Data cleaning & processing</li>
+                        <li><i class="fas fa-check-circle"></i> Statistical testing</li>
+                        <li><i class="fas fa-check-circle"></i> Graphical representation</li>
+                        <li><i class="fas fa-check-circle"></i> SPSS, R, Excel, GraphPad</li>
+                    </ul>
+                </div>
+
+                <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="service-icon" style="background: var(--gradient-2);">
+                        <i class="fas fa-edit"></i>
+                    </div>
+                    <h3>Editing & Proofreading</h3>
+                    <p>Professional language editing and formatting according to international standards.</p>
+                    <ul>
+                        <li><i class="fas fa-check-circle"></i> Grammar correction</li>
+                        <li><i class="fas fa-check-circle"></i> Language improvement</li>
+                        <li><i class="fas fa-check-circle"></i> Academic style editing</li>
+                        <li><i class="fas fa-check-circle"></i> Journal formatting</li>
+                    </ul>
+                </div>
+
+                <div class="service-card" data-aos="fade-up" data-aos-delay="350">
+                    <div class="service-icon" style="background: var(--gradient-3);">
+                        <i class="fas fa-user-graduate"></i>
+                    </div>
+                    <h3>PhD Mentorship</h3>
+                    <p>Personalized guidance from experienced PhD mentors for doctoral success.</p>
+                    <ul>
+                        <li><i class="fas fa-check-circle"></i> Research planning</li>
+                        <li><i class="fas fa-check-circle"></i> Literature review support</li>
+                        <li><i class="fas fa-check-circle"></i> Publication strategy</li>
+                        <li><i class="fas fa-check-circle"></i> Career guidance</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section class="about-section" id="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text" data-aos="fade-right">
+                    <div class="section-label">
+                        <i class="fas fa-university"></i>
+                        About Us
+                    </div>
+                    <h2>About the Institute</h2>
+                    <p>
+                        The <strong>Institute for Applied Research and Training</strong> is a multidisciplinary research
+                        and training organization committed to promoting academic excellence and innovation.
+                    </p>
+                    <p>
+                        We support students, researchers, and professionals across diverse disciplines with structured
+                        training programs, research mentorship, and academic writing assistance to help develop strong
+                        analytical and scientific communication skills.
+                    </p>
+                    <p>
+                        Our mission is to bridge the gap between academic learning and real-world research by providing
+                        structured guidance and hands-on training that prepares scholars for success.
+                    </p>
+                </div>
+
+                <div class="about-image" data-aos="fade-left">
+                    <img src="2.jpg"
+                        alt="About IART">
+                    <div class="about-stats">
+                        <h4>10+</h4>
+                        <p>Years of Excellence</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="disciplines-section" data-aos="fade-up">
+                <h3 class="disciplines-title">
+                    <i class="fas fa-graduation-cap" style="color: var(--primary);"></i>
+                    Disciplines We Support
+                </h3>
+                <div class="disciplines-grid">
+                    <span class="discipline-tag">Life Sciences</span>
+                    <span class="discipline-tag">Medical Courses</span>
+                    <span class="discipline-tag">Engineering</span>
+                    <span class="discipline-tag">Zoology</span>
+                    <span class="discipline-tag">Botany</span>
+                    <span class="discipline-tag">Chemistry</span>
+                    <span class="discipline-tag">Microbiology</span>
+                    <span class="discipline-tag">Biochemistry</span>
+                    <span class="discipline-tag">Food Sciences</span>
+                    <span class="discipline-tag">Molecular Biology</span>
+                    <span class="discipline-tag">Biotechnology</span>
+                    <span class="discipline-tag">Biophysics</span>
+                    <span class="discipline-tag">Environmental Science</span>
+                    <span class="discipline-tag">Wildlife Studies</span>
+                    <span class="discipline-tag">Physics</span>
+                    <span class="discipline-tag">Information Technology</span>
+                    <span class="discipline-tag">Digital Marketing</span>
+                    <span class="discipline-tag">Humanities</span>
+                    <span class="discipline-tag">Commerce</span>
+                    <span class="discipline-tag">Arts</span>
+                    <span class="discipline-tag">Management</span>
+                    <span class="discipline-tag">Law</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- VISION MISSION SECTION -->
+    <section class="vm-section">
+        <div class="container">
+            <div class="vm-grid">
+                <div class="vm-card" data-aos="fade-right">
+                    <h3><i class="fas fa-eye"></i> Our Vision</h3>
+                    <p>
+                        To become a global center of excellence for research training and academic guidance that
+                        empowers students to contribute to scientific discovery and innovation. We envision a world
+                        where every aspiring researcher has access to quality mentorship and resources to achieve their
+                        academic goals.
+                    </p>
+                </div>
+
+                <div class="vm-card secondary" data-aos="fade-left">
+                    <h3><i class="fas fa-bullseye"></i> Our Mission</h3>
+                    <ul>
+                        <li><i class="fas fa-check-circle"></i> Promote quality research and academic writing</li>
+                        <li><i class="fas fa-check-circle"></i> Provide mentorship to students and scholars</li>
+                        <li><i class="fas fa-check-circle"></i> Encourage interdisciplinary research</li>
+                        <li><i class="fas fa-check-circle"></i> Enhance research communication skills</li>
+                        <li><i class="fas fa-check-circle"></i> Support publication in reputed journals</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- STATS SECTION -->
+    <section class="stats-section">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="stat-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <div class="stat-number counter" data-target="500">0</div>
+                    <div class="stat-label">Students Guided</div>
+                </div>
+
+                <div class="stat-item" data-aos="zoom-in" data-aos-delay="150">
+                    <div class="stat-icon">
+                        <i class="fas fa-file-alt"></i>
+                    </div>
+                    <div class="stat-number counter" data-target="300">0</div>
+                    <div class="stat-label">Research Papers</div>
+                </div>
+
+                <div class="stat-item" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="stat-icon">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <div class="stat-number counter" data-target="150">0</div>
+                    <div class="stat-label">Publications</div>
+                </div>
+
+                <div class="stat-item" data-aos="zoom-in" data-aos-delay="250">
+                    <div class="stat-icon">
+                        <i class="fas fa-smile"></i>
+                    </div>
+                    <div class="stat-number counter" data-target="95">0</div>
+                    <div class="stat-label">Satisfaction Rate</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TRAINING SECTION -->
+    <section class="training-section" id="training">
+        <div class="container">
+            <div class="text-center" data-aos="fade-up">
+                <div class="section-label">
+                    <i class="fas fa-graduation-cap"></i>
+                    Training Programs
+                </div>
+                <h2 class="section-title">Research Training Programs</h2>
+                <p class="section-description">
+                    Develop strong research skills through our comprehensive training workshops and programs.
+                </p>
+            </div>
+
+            <div class="training-grid">
+                <div class="training-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="training-icon">
+                        <i class="fas fa-flask"></i>
+                    </div>
+                    <h4>Research Methodology</h4>
+                    <p>Learn systematic approaches to conducting quality research with practical applications.</p>
+                </div>
+
+                <div class="training-card" data-aos="fade-up" data-aos-delay="150">
+                    <div class="training-icon" style="background: var(--gradient-2);">
+                        <i class="fas fa-pen-fancy"></i>
+                    </div>
+                    <h4>Scientific Writing Workshop</h4>
+                    <p>Master the art of academic and scientific writing for publications.</p>
+                </div>
+
+                <div class="training-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="training-icon" style="background: var(--gradient-3);">
+                        <i class="fas fa-presentation"></i>
+                    </div>
+                    <h4>Presentation & Seminar Skills</h4>
+                    <p>Enhance your seminar, conference, and webinar communication abilities.</p>
+                </div>
+
+                <div class="training-card" data-aos="fade-up" data-aos-delay="250">
+                    <div class="training-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <h4>Academic Career Development</h4>
+                    <p>Plan and accelerate your academic career path with expert guidance.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section class="contact-section" id="contact">
+        <div class="container">
+            <div class="text-center" data-aos="fade-up">
+                <div class="section-label">
+                    <i class="fas fa-envelope"></i>
+                    Get In Touch
+                </div>
+                <h2 class="section-title">Contact Us</h2>
+                <p class="section-description">
+                    Get in touch with us for any queries or to schedule a free consultation with our experts.
+                </p>
+            </div>
+
+            <div class="contact-grid">
+                <div class="contact-info" data-aos="fade-right">
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h5>Our Location</h5>
+                            <p>
+                                21, Lower Ground Floor, Lalitaksh Chowk<br>
+                                Near IIT Delhi, Jia Sarai<br>
+                                Hauz Khas, New Delhi – 110016
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="contact-card">
+                        <div class="contact-icon" style="background: var(--gradient-2);">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h5>Email Address</h5>
+                            <p><a href="mailto:research.iart@gmail.com">research.iart@gmail.com</a></p>
+                        </div>
+                    </div>
+
+                    <div class="contact-card">
+                        <div class="contact-icon" style="background: var(--gradient-3);">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h5>Phone Number</h5>
+                            <p><a href="tel:+919958980818">+91 99589 80818</a></p>
+                        </div>
+                    </div>
+
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h5>Working Hours</h5>
+                            <p>Monday - Saturday: 10:00 AM - 6:00 PM<br>Sunday: Closed</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="map-container" data-aos="fade-left">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3504.5246279844946!2d77.19117!3d28.543627!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjjCsDMyJzM3LjEiTiA3N8KwMTEnMjguMiJF!5e0!3m2!1sen!2sin!4v1234567890"
+                        allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="logo-icon" style="width: 56px; height: 56px;">
+                        <img src="logo.jpeg" alt="IART Logo">
+                    </div>
+                    <p>
+                        Institute for Applied Research and Training is dedicated to providing excellence in research
+                        guidance and academic support across all disciplines.
+                    </p>
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/company/institute-for-applied-research-and-training/"><i
+                                class="fab fa-linkedin-in"></i></a>
+                        <a href="https://www.instagram.com/edu.iart?igsh=MTd3bndvaXIyZDVqMw=="><i
+                                class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#training">Training</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Our Services</h4>
+                    <ul>
+                        <li><a href="#services">Research Paper Writing</a></li>
+                        <li><a href="#services">Thesis Support</a></li>
+                        <li><a href="#services">Statistical Analysis</a></li>
+                        <li><a href="#services">PhD Mentorship</a></li>
+                        <li><a href="#services">Academic Editing</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <ul class="footer-contact">
+                        <li>
+                            <i class="fas fa-phone-alt"></i>
+                            <span>+91 99589 80818</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <span>research.iart@gmail.com</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Near IIT Delhi, Hauz Khas, New Delhi - 110016</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 Institute for Applied Research and Training. All Rights Reserved.</p>
+                <div class="footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Sitemap</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- SCROLL TO TOP -->
+    <div class="scroll-top" id="scrollTop">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+
+    <!-- SCRIPTS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script>
+        // ===== INITIALIZE WELCOME SLIDER =====
+        let swiper = new Swiper(".welcomeSwiper", {
+            speed: 1000,
+            effect: "fade",
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            autoplay: {
+                delay: 20000,
+                disableOnInteraction: false,
+            },
+            on: {
+                slideChange: function () {
+                    console.log("Slide changed to: " + this.activeIndex);
+                }
+            }
+        });
+
+        // ===== SKIP WELCOME BUTTON =====
+        document.getElementById('skipWelcome').addEventListener('click', () => {
+            const welcomeSection = document.getElementById('welcomeSection');
+            welcomeSection.classList.add('hidden');
+            document.body.style.overflow = 'auto';
+        });
+
+        // ===== AUTO HIDE WELCOME AFTER LAST SLIDE =====
+        swiper.on('slideChange', function () {
+            if (this.activeIndex === 3) { // Changed to 3 since we have 4 slides (0-3)
+                setTimeout(() => {
+                    const welcomeSection = document.getElementById('welcomeSection');
+                    welcomeSection.classList.add('hidden');
+                    document.body.style.overflow = 'auto';
+                }, 15000);
+            }
+        });
+
+        // Initialize AOS (Animate On Scroll)
+        AOS.init({
+            duration: 700,
+            once: true,
+            offset: 80,
+            easing: 'ease-out-cubic'
+        });
+
+        // ===== NAVBAR SCROLL EFFECT =====
+        const navbar = document.querySelector('.navbar');
+
+        window.addEventListener('scroll', function () {
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+
+        // ===== ACTIVE NAV LINK ON SCROLL =====
+        const sections = document.querySelectorAll('section');
+        const navLinks = document.querySelectorAll('.nav-link:not(.nav-cta)');
+
+        window.addEventListener('scroll', () => {
+            let current = '';
+
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+
+                if (scrollY >= (sectionTop - 200)) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') && link.getAttribute('href').slice(1) === current) {
+                    link.classList.add('active');
+                }
+            });
+        });
+
+        // ===== SCROLL TO TOP BUTTON =====
+        const scrollTop = document.getElementById('scrollTop');
+
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 400) {
+                scrollTop.classList.add('show');
+            } else {
+                scrollTop.classList.remove('show');
+            }
+        });
+
+        scrollTop.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+
+        // ===== SMOOTH SCROLL FOR ANCHOR LINKS =====
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                const href = this.getAttribute('href');
+
+                if (href !== '#' && href !== '#!') {
+                    e.preventDefault();
+
+                    const target = document.querySelector(href);
+                    if (target) {
+                        const offsetTop = target.offsetTop - 80;
+
+                        window.scrollTo({
+                            top: offsetTop,
+                            behavior: 'smooth'
+                        });
+
+                        // Close mobile navbar if open
+                        const navbarCollapse = document.querySelector('.navbar-collapse');
+                        if (navbarCollapse.classList.contains('show')) {
+                            const toggleBtn = document.querySelector('.navbar-toggler');
+                            toggleBtn.click();
+                        }
+                    }
+                }
+            });
+        });
+
+        // ===== COUNTER ANIMATION =====
+        function animateCounters() {
+            const counters = document.querySelectorAll('.counter');
+
+            counters.forEach(counter => {
+                const target = parseInt(counter.getAttribute('data-target'));
+                const increment = target / 100;
+                let current = 0;
+
+                const updateCounter = () => {
+                    current += increment;
+
+                    if (current < target) {
+                        counter.textContent = Math.ceil(current);
+                        setTimeout(updateCounter, 30);
+                    } else {
+                        counter.textContent = target + '+';
+                    }
+                };
+
+                updateCounter();
+            });
+        }
+
+        // Trigger counter animation when stats section is in view
+        const observerOptions = {
+            threshold: 0.5
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    if (entry.target.classList.contains('stats-section')) {
+                        animateCounters();
+                        observer.unobserve(entry.target);
+                    }
+                }
+            });
+        }, observerOptions);
+
+        const statsSection = document.querySelector('.stats-section');
+        if (statsSection) {
+            observer.observe(statsSection);
+        }
+
+        // ===== MOBILE NAVBAR TOGGLE FIX =====
+        const navbarToggler = document.querySelector('.navbar-toggler');
+        const navbarCollapse = document.querySelector('.navbar-collapse');
+
+        // Close navbar when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!e.target.closest('.navbar')) {
+                if (navbarCollapse.classList.contains('show')) {
+                    navbarToggler.click();
+                }
+            }
+        });
+
+        console.log('All scripts initialized successfully!');
+    </script>
+
+</body>
+
+</html>
